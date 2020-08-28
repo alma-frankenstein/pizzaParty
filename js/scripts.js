@@ -4,7 +4,7 @@
 // const python = "Python, a popular and well-documented programming language, is a good choice for you.";
 
 function Pizza() {  // toppings as an array
-  this.totalCost = 0;
+  this.totalCost = 3;
   // this.size = size;
   // this.toppings = toppings;
 }
@@ -28,7 +28,7 @@ function langChooser(total){
 
 
 $(document).ready(function(){
-  $("form#survey").submit(function(event) {
+  $("form#pizzaSelector").submit(function(event) {
     const sizeVal = parseInt($("input:radio[name=size]:checked").val());
     const toppingVal = parseInt($("input:radio[name=topping]:checked").val());
 
