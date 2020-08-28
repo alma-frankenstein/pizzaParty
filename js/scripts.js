@@ -40,8 +40,10 @@ $(document).ready(function(){
     myPizza.addToppingCost(3);
 
 
-    $("#pizzaCost").text(myPizza.totalCost);
-    $("#cost").show();
+    $("#cost").text("$" + myPizza.totalCost);
+    // $("#cost").show();
+    $("#pizzaCost").show();
+
 
     // if (language === lol){
     //   $(".lol").show();

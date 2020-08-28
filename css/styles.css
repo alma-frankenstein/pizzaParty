@@ -1,3 +1,7 @@
-#cost {
+/* #cost {
+  display: none;
+} */
+
+#pizzaCost {
   display: none;
 }
