@@ -1,4 +1,3 @@
-
 function Pizza(size, toppings) { 
   this.totalCost = 0;
   this.size = size;
@@ -56,20 +55,16 @@ $(document).ready(function(){
     let toppingArray = [];
 
     $.each($("input[name='topping']:checked"), function(){
-      // toppingTotal += parseInt($(this).val());
       let toppingVal = parseInt($(this).val());
       toppingTotal += toppingVal;
       topping = valToTopping(toppingVal);
       toppingArray.push(topping);
     });
-    console.log(toppingArray);
 
     const pizzaSize = valToSize(sizeVal);
     const total = sizeVal + toppingTotal;
-
     let myPizza = new Pizza(pizzaSize, toppingArray);
     myPizza.addToppingCost(total);
-    console.log(myPizza.size);
 
     $("#cost").text("$" + myPizza.totalCost);
     $("#pizzaCost").show();
