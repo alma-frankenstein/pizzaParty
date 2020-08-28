@@ -3,7 +3,7 @@
 #### Created by Alma Frankenstein, August 2020
 
 ## Description
-This app allows the user to choose a pizza size and toppings, and returns the cost of the pizza based on their choices.
+This app allows the user to choose a pizza size and toppings, and returns the cost of the pizza based on their choices. If no size is chosen, the size defaults to 'small'.
 
 
 ## Specs
@@ -27,6 +27,9 @@ Clone this repo using:
 ```git clone https://github.com/alma-frankenstein/pizzaParty.git pizzaParty```
 
 Open index.html in your browser to view the page
+
+The working version of this site can be viewed on [GitHub Pages](https://alma-frankenstein.github.io/pizzaParty/)
+
 
 ## Technologies Used
 
