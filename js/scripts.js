@@ -37,7 +37,7 @@ $(document).ready(function(){
     // let myPizza = new Pizza();
     let myPizza = new Pizza();
     // myPizza.addToppingCost();
-    myPizza.addToppingCost(3);
+    myPizza.addToppingCost(total);
 
 
     $("#cost").text("$" + myPizza.totalCost);
