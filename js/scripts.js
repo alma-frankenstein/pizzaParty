@@ -1,9 +1,7 @@
 
-// const lol = "LOLCODE, a programming language based on the lolcat internet meme, is a good choice for you.";
-// const clojure = "Clojure, a boutique functional programming language, is a good choice for you.";
-// const python = "Python, a popular and well-documented programming language, is a good choice for you.";
 
-function Pizza() {  // toppings as an array
+
+function Pizza() { 
   this.totalCost = 0;
   // this.size = size;
   // this.toppings = toppings;
@@ -34,24 +32,13 @@ $(document).ready(function(){
 
     const total = sizeVal + toppingVal;
 
-    // let myPizza = new Pizza();
     let myPizza = new Pizza();
-    // myPizza.addToppingCost();
     myPizza.addToppingCost(total);
 
 
     $("#cost").text("$" + myPizza.totalCost);
-    // $("#cost").show();
     $("#pizzaCost").show();
 
-
-    // if (language === lol){
-    //   $(".lol").show();
-    // } else if (language === clojure){
-    //   $(".clojure").show();
-    // } else {
-    //   $(".python").show();
-    // }
 
     event.preventDefault();
   });
