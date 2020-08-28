@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  background-color: papayawhip;
+  background-color: #FFF59D;
   text-align: center;
   width: auto;
   padding: 30px;
@@ -23,6 +23,8 @@ body {
 h1 {
   text-align: center;
   padding: 3%;
+  background-color: #FFF59D;
+  border-radius: 20px;
 }
 
 .btn {
