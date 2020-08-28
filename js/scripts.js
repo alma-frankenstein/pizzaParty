@@ -10,7 +10,7 @@ Pizza.prototype.addToppingCost = function(total) {
 function checkForSize(sizeValue){
   let size;
   // if (typeof(sizeValue) != "number") {
-  if (sizeValue === "NaN") {
+  if (typeof(sizeValue) === "undefined") {
     size = 12;
   } else {
     size = sizeValue;
@@ -24,12 +24,13 @@ $(document).ready(function(){
     event.preventDefault();
 
     let toppingTotal = 0;
-    sizeChecked = parseInt($("input:radio[name=size]:checked").val());
-    console.log(sizeChecked);
+    sizeChecked = $("input:radio[name=size]:checked").val();  //remove parseInt
+    console.log("checked value " + sizeChecked); //undefined
+    console.log("typeof sizeChecked " + typeof(sizeChecked));
 
     sizeVal = checkForSize(sizeChecked);
-    console.log(sizeVal);
-    console.log(typeof(sizeVal));
+    console.log("after function " + sizeVal); //Nan
+    console.log(typeof(sizeVal)); //number
 
     $.each($("input[name='topping']:checked"), function(){
       toppingTotal += parseInt($(this).val());
