@@ -2,27 +2,92 @@
 <html lang="en-US">
 <head>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="static/favicon.ico">
-
-  <title></title>
+  <title>Pizza Party!</title>
 </head>
 <body>
+    <h1>Welcome to this most excellent pizza site</h1>
+    <h3>Please select a size for your righteous pizza</h3>
+    
   <div class="container">
-    <h1></h1>
+    <form id ="survey">
+    <label class="question">How do you feel about cute kittens?</label>
+    <div class="form-check" id="kittenQ">
+      <input class="form-check-input" type="radio" name="kitten" id="radio1" value=1>
+      <label class="form-check-label" for="radio1">OMG I love kittens!!!</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="kitten" id="radio2" value=2>
+      <label class="form-check-label" for="radio2">Yeah, kittens are fine.</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="kitten" id="radio3" value=3>
+      <label class="form-check-label" for="radio3">Kittens are fascinating. Did you know that Isaac Newton
+        invented the cat door?</label>
+    </div>
 
-        <!-- <form id="number">
-        <div class="form-group row">
-          <input id="inputNum" class="form-control" type="text">
-          <label for="inputNum">Please enter a number</label>
+    <h3>Dude! Toppings!</h3>
+    <label class="question">Do you want to get a job with your programming skills?</label>
+    <div class="form-check" id="jobQ">
+      <input class="form-check-input" type="radio" name="job" id="radio1" value=1>
+      <label class="form-check-label" for="radio1">No, I actually like being a barista.</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="job" id="radio2" value=2>
+      <label class="form-check-label" for="radio2">Yes, something stable with benefits.</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="job" id="radio3" value=3>
+      <label class="form-check-label" for="radio3">Yes, in a startup with a vintage Atari in the break room.</label>
+    </div>
+
+
+
+
+    <div>
+      <button type="submit" class="btn">Make My Pizza!</button>
+    </div>
+    </form>
+
+    <div id="pizzaCost">
+      <h2>This pizza will cost you: </h2>
+      <p id=cost></p>
+    </div>
+
+    <!-- <img src="img/lolPic.jpeg" class="lol" alt="LOLCODE logo">
+    <img src="img/python.jpeg" class="python" alt="python logo">
+    <img src="img/clojure.jpeg" class="clojure" alt="clojure logo">
+
+    <p class="lol">Learn more about LOLCODE at <a href="http://www.lolcode.org/"><span style="color: #FF0066;">
+      lolcode.org</span></a></p>
+    <p class="python">Learn more about Python at <a href="https://www.python.org/"><span style="color: #FF0066;">
+      python.org</span></a></p>
+    <p class="clojure">Learn more about Clojure at <a href="https://clojure.org/"><span style="color: #FF0066;">
+      clojure.org</span></a></p> -->
+
+    <!-- <div class="lol">
+      <p>Here's some example code:</p>
+      <div class="codeBlock">
+        <p class="code">HAI 1.2</p>
+        <p class="code">  CAN HAS STDIO?</p>
+        <p class="code">  VISIBLE "HAI WORLD!!!1!"</p>
+        <p class="code">KTHXBYE</p>
       </div>
-      <button type="submit">Try it!</button>
-    </form> -->
-
-    <div id="returnNumber"></div>
+    </div>
+    <div class="python">
+      <p>Here's some example code:</p>
+      <p class="code">print("hello, world")</p>
+    </div>
+    <div class="clojure">
+      <p>Here's some example code:</p>
+      <div class="codeBlock">
+      <p class="code">(defn -main</p>
+        <p class="code">  "I can say 'Hello World'."</p>
+        <p class="code">  []</p>
+        <p class="code">  (println "Hello, World!"))</p>
+      </div>
+    </div> -->
 
   </div>
 </body>
