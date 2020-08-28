@@ -3,14 +3,14 @@
 // const clojure = "Clojure, a boutique functional programming language, is a good choice for you.";
 // const python = "Python, a popular and well-documented programming language, is a good choice for you.";
 
-function Pizza(size, toppings) {  // toppings as an array
+function Pizza(cost) {  // toppings as an array
   this.totalCost = 0;
-  this.size = size;
-  this.toppings = toppings;
+  // this.size = size;
+  // this.toppings = toppings;
 }
 
-Pizza.prototype.addToppingCost = function(toppingTotal) {
-  this.totalCost += toppingTotal;
+Pizza.prototype.addToppingCost = function(total) {
+  this.totalCost += total;
 }
 
 function langChooser(total){
@@ -29,26 +29,23 @@ function langChooser(total){
 
 $(document).ready(function(){
   $("form#survey").submit(function(event) {
-    const kittenVal = parseInt($("input:radio[name=kitten]:checked").val());
-    const jobVal = parseInt($("input:radio[name=job]:checked").val());
-    const classVal = parseInt($("input:radio[name=favClass]:checked").val());
-    const videoVal = parseInt($("input:radio[name=video]:checked").val());
-    const clothesVal = parseInt($("input:radio[name=clothes]:checked").val());
+    const sizeVal = parseInt($("input:radio[name=size]:checked").val());
+    const toppingVal = parseInt($("input:radio[name=topping]:checked").val());
 
-    const total = kittenVal + jobVal + classVal + videoVal + clothesVal;
+    const total = sizeVal + toppingVal;
 
-    let language = langChooser(total);
+    let myPizza = new Pizza(total);
 
-    $("#langAnswer").text(language);
-    $("#suggestedLanguage").show();
+    $("#pizzaCost").text(language);
+    $("#cost").show();
 
-    if (language === lol){
-      $(".lol").show();
-    } else if (language === clojure){
-      $(".clojure").show();
-    } else {
-      $(".python").show();
-    }
+    // if (language === lol){
+    //   $(".lol").show();
+    // } else if (language === clojure){
+    //   $(".clojure").show();
+    // } else {
+    //   $(".python").show();
+    // }
 
     event.preventDefault();
   });
