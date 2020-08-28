@@ -13,8 +13,8 @@ This app allows the user to choose a pizza size and toppings, and returns the co
   * output: $12
 
 * allow users to select toppings
-  * input: 'pepper', 'pineapple'
-  * output: 'pepper', 'pineapple'
+  * input: select: 'pepper', 'pineapple'
+  * output: selected: 'pepper', 'pineapple'
 
 * add cost of each selected topping to the baseline cost of the pizza
   * input: 'pepper': $3, 'pineapple': $4
@@ -22,6 +22,11 @@ This app allows the user to choose a pizza size and toppings, and returns the co
 
 ## Setup
 
+Clone this repo using:
+
+```git clone https://github.com/alma-frankenstein/pizzaParty.git pizzaParty```
+
+Open index.html in your browser to view the page
 
 ## Technologies Used
 

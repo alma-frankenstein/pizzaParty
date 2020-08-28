@@ -6,6 +6,7 @@ body {
   background-color: orange;
   margin-left: 12%;
   margin-right: 12%;
+  font-family: 'Londrina Solid', cursive;
 }
 
 .container {
@@ -28,6 +29,7 @@ h1 {
   text-align: center;
   padding: 15px;
   background-color: #FFC107;
+  font-family: 'Londrina Solid', cursive;
 }
 
 #toppingsSection {
