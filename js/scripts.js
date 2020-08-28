@@ -25,13 +25,27 @@ Pizza.prototype.addToppingCost = function(total) {
 
 $(document).ready(function(){
   $("form#pizzaSelector").submit(function(event) {
-    const sizeVal = parseInt($("input:radio[name=size]:checked").val());
-    const toppingVal = parseInt($("input:radio[name=topping]:checked").val());
+    // const sizeVal = parseInt($("input:radio[name=size]:checked").val());
+    // const toppingVal = parseInt($("input:radio[name=topping]:checked").val());
 
-    const total = sizeVal + toppingVal;
+
+    const sizeVal = parseInt($("input:radio[name=size]:checked").val());
+    // const topping1Val = parseInt(document.getElementById("topping1").value);
+    const topping1Val = document.getElementById("topping1").value;
+    const topping1ValInt = parent(topping1Val);
+
+
+    // const topping2Val = parseInt(document.getElementById("topping2").value);
+    console.log(topping1ValInt);
+
+
+    // const total = sizeVal + toppingVal;
+    const total = sizeVal + topping1ValInt;
+
 
     let myPizza = new Pizza();
     myPizza.addToppingCost(total);
+
 
 
     $("#cost").text("$" + myPizza.totalCost);
