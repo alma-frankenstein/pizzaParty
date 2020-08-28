@@ -4,5 +4,30 @@
 
 body {
   background-color: orange;
-  
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.container {
+  background-color: papayawhip;
+  text-align: center;
+  width: auto;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-size: x-large;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn {
+  font-size: large;
+  text-align: center;
+  padding: 15px;
+}
+
+#toppingsSection {
+  padding-bottom: 16px;
 }
