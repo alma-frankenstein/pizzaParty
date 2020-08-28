@@ -1,6 +1,4 @@
 
-xxx
-
 function Pizza() { 
   this.totalCost = 0;
   // this.size = size;
