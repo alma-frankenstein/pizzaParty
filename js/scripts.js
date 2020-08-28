@@ -4,7 +4,7 @@
 // const python = "Python, a popular and well-documented programming language, is a good choice for you.";
 
 function Pizza() {  // toppings as an array
-  this.totalCost = 3;
+  this.totalCost = 0;
   // this.size = size;
   // this.toppings = toppings;
 }
@@ -13,18 +13,18 @@ Pizza.prototype.addToppingCost = function(total) {
   this.totalCost += total;
 }
 
-function langChooser(total){
-  let lang;
+// function langChooser(total){
+//   let lang;
 
-  if (total <= 8){
-    lang = lol;
-  } else if (total >= 13){
-    lang = clojure; 
-  } else {
-    lang = python;
-  }
-  return lang;
-}
+//   if (total <= 8){
+//     lang = lol;
+//   } else if (total >= 13){
+//     lang = clojure; 
+//   } else {
+//     lang = python;
+//   }
+//   return lang;
+// }
 
 
 $(document).ready(function(){
