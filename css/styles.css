@@ -20,14 +20,20 @@ body {
 
 h1 {
   text-align: center;
+  padding: 3%;
 }
 
 .btn {
   font-size: large;
   text-align: center;
   padding: 15px;
+  background-color: #FFC107;
 }
 
 #toppingsSection {
-  padding-bottom: 16px;
+  padding: 3%;
+}
+
+#pizzaSelector {
+  padding: 3%;
 }
