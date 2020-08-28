@@ -1,7 +1,17 @@
 
-const lol = "LOLCODE, a programming language based on the lolcat internet meme, is a good choice for you.";
-const clojure = "Clojure, a boutique functional programming language, is a good choice for you.";
-const python = "Python, a popular and well-documented programming language, is a good choice for you.";
+// const lol = "LOLCODE, a programming language based on the lolcat internet meme, is a good choice for you.";
+// const clojure = "Clojure, a boutique functional programming language, is a good choice for you.";
+// const python = "Python, a popular and well-documented programming language, is a good choice for you.";
+
+function Pizza(size, toppings) {  // toppings as an array
+  this.totalCost = 0;
+  this.size = size;
+  this.toppings = toppings;
+}
+
+Pizza.prototype.addToppingCost = function(toppingTotal) {
+  this.totalCost += toppingTotal;
+}
 
 function langChooser(total){
   let lang;
