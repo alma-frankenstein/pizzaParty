@@ -42,4 +42,6 @@ For questions or to suggestions, please email A.Q.Frankenstein@gmail.com
 
 This software is licensed under the MIT license.
 
+Fonts are licensed under the Apache License, Version 2.0.
+
 Copyright (c) 2020 Alma Frankenstein
