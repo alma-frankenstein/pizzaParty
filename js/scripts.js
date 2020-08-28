@@ -3,7 +3,7 @@
 // const clojure = "Clojure, a boutique functional programming language, is a good choice for you.";
 // const python = "Python, a popular and well-documented programming language, is a good choice for you.";
 
-function Pizza(cost) {  // toppings as an array
+function Pizza() {  // toppings as an array
   this.totalCost = 0;
   // this.size = size;
   // this.toppings = toppings;
@@ -34,9 +34,13 @@ $(document).ready(function(){
 
     const total = sizeVal + toppingVal;
 
-    let myPizza = new Pizza(total);
+    // let myPizza = new Pizza();
+    let myPizza = new Pizza();
+    // myPizza.addToppingCost();
+    myPizza.addToppingCost(3);
 
-    $("#pizzaCost").text(language);
+
+    $("#pizzaCost").text(myPizza.totalCost);
     $("#cost").show();
 
     // if (language === lol){
