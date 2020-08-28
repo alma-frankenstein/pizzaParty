@@ -30,17 +30,22 @@ $(document).ready(function(){
     // const sizeVal = parseInt($("input:radio[name=size]:checked").val());
     // const toppingVal = parseInt($("input:radio[name=topping]:checked").val());
 
+    // <input type="checkbox" name="topping" id="topping1" value=1> 
+    let toppingTotal = 0;
 
     const sizeVal = parseInt($("input:radio[name=size]:checked").val());
     console.log(typeof(sizeVal));
-    // const topping1Val = parseInt(document.getElementById("topping1").value);
-    const topping1Val = parseInt($("#topping1:checked").val());
+
+    // const topping1Val = parseInt($("#topping1:checked").val());
+    $.each($("input[name='topping']:checked"), function(){
+      toppingTotal += parseInt($(this).val());
+    });
 
 
-    console.log(typeof(topping1Val));
+    console.log(typeof(toppingTotal));
 
 
-    const total = sizeVal + topping1Val;
+    const total = sizeVal + toppingTotal;
 
 
     let myPizza = new Pizza();
