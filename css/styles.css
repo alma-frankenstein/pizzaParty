@@ -1,7 +1,8 @@
-/* #cost {
-  display: none;
-} */
-
 #pizzaCost {
   display: none;
+}
+
+body {
+  background-color: orange;
+  
 }
