@@ -12,7 +12,8 @@ $(document).ready(function(){
     event.preventDefault();
 
     let toppingTotal = 0;
-    const sizeVal = parseInt($("input:radio[name=size]:checked").val());
+    sizeVal = parseInt($("input:radio[name=size]:checked").val());
+    console.log(sizeVal);
 
     $.each($("input[name='topping']:checked"), function(){
       toppingTotal += parseInt($(this).val());
