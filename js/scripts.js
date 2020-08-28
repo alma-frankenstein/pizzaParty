@@ -32,9 +32,12 @@ $(document).ready(function(){
 
 
     const sizeVal = parseInt($("input:radio[name=size]:checked").val());
-    const topping1Val = parseInt(document.getElementById("topping1").value);
+    console.log(typeof(sizeVal));
+    // const topping1Val = parseInt(document.getElementById("topping1").value);
+    const topping1Val = parseInt($("#topping1:checked").val());
 
-    console.log(topping1Val);
+
+    console.log(typeof(topping1Val));
 
 
     const total = sizeVal + topping1Val;
